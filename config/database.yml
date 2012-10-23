@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: activities_development
+  pool: 5
+  username: activities
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: activities_test
+  pool: 5
+  username: activities
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: activities_production
+  pool: 5
+  username: activities
+  password:
