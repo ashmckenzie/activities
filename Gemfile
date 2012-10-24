@@ -6,6 +6,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'friendly_id'
+gem "verbs", "~> 2.1.0"
 
 group :development do
   gem 'thin'

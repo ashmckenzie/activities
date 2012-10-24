@@ -8,10 +8,12 @@
   </h2>
   <%= calendar @date do |date| %>
     <%= date.day %>
-    <% if @activities_by_date[date] %>
-      <ul>
-        <% @activities_by_date[date].each do |activity| %>
-          <li><%= link_to activity.name, activity %></li>
+    <% if @activities[date] %>
+      <ul class="activities-for-day">
+        <% @activities[date].each do |au| %>
+          <li>
+            <%= link_to au.activity.name, au.activity, :title => au.description, :class => "activity activity-#{au.activity.slug}" %>
+          </li>
         <% end %>
       </ul>
     <% end %>
